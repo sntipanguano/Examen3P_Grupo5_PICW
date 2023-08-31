@@ -1,6 +1,291 @@
 @page "/destinos"
+@using Microsoft.JSInterop
 
 @layout MainLayout
 
-<h1>Página de Destinos</h1>
-<p>Bienvenido a la página de Destinos.</p>
+<a href="/" class="btn">Sol Caribe</a>
+<div class="destinos-page">
+    <div class="hero-container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>DESTINOS TURÍSTICOS</h1>
+                <div class="explora-container">
+                    <p class="explora">Explora nuestra selección de destinos 
+                        increíbles para tus próximas aventuras. Ya sea que busques 
+                        playas paradisíacas, experiencias culturales enriquecedoras 
+                        o emocionantes aventuras al aire libre, nuestros paquetes 
+                        de viaje te ofrecen lo mejor de cada destino. Sumérgete en 
+                        la belleza de la naturaleza en Galápagos, disfruta del sol 
+                        y la diversión en Miami o explora la historia y la arquitectura 
+                        en Madrid. ¡Tu próxima aventura te espera!</p>
+                </div>                
+            </div>
+        </section>
+        <div class="hero-image">
+            <img src="images/destinos.jpg" alt="Imagen de fondo" />
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="destinos-page">
+        <!-- Hero section (igual al código anterior) -->
+
+        <br />
+        <br />
+        <br />
+
+        <!-- Destino: Galápagos -->
+        <div class="destino-container">
+            <div class="destino-image">
+                <img src="images/galapagos.jpg" alt="Galápagos" />
+            </div>
+            <div class="destino-info">
+                <h2>Galápagos</h2>
+                <p>Descubre la asombrosa biodiversidad de las Islas Galápagos. Disfruta de playas paradisíacas, observa la fauna única y explora la naturaleza.</p>
+                <p>Precio desde: $2000</p>
+                <p>Días de estancia: 7</p>
+                <ul>
+                    <li>Vuelos ida y vuelta incluidos</li>
+                    <li>Alojamiento en hoteles de lujo</li>
+                    <li>Tour de observación de tortugas gigantes</li>
+                    <li>Buceo y snorkeling en arrecifes de coral</li>
+                    <li>Comidas y bebidas incluidas</li>
+                </ul>
+                <a href="" class="btn" @onclick="ShowAddedToCartAlert">Reservar Ahora</a>
+            </div>
+        </div>
+
+        <!-- Destino: Miami -->
+        <div class="destino-container">
+            <div class="destino-image">
+                <img src="images/miami.jpg" alt="Miami" />
+            </div>
+            <div class="destino-info">
+                <h2>Miami</h2>
+                <p>Experimenta la vibrante vida nocturna, las hermosas playas y la diversidad cultural de Miami. Compras, entretenimiento y sol te esperan.</p>
+                <p>Precio desde: $1200</p>
+                <p>Días de estancia: 5</p>
+                <ul>
+                    <li>Vuelos ida y vuelta incluidos</li>
+                    <li>Alojamiento en hoteles de lujo cerca de la playa</li>
+                    <li>Recorrido por los distritos de arte</li>
+                    <li>Entradas para atracciones locales</li>
+                    <li>Noches de entretenimiento en clubes y bares</li>
+                </ul>
+                <a href="" class="btn" @onclick="ShowAddedToCartAlert">Reservar Ahora</a>
+            </div>
+        </div>
+
+        <!-- Destino: Madrid -->
+        <div class="destino-container">
+            <div class="destino-image">
+                <img src="images/madrid.jpg" alt="Madrid" />
+            </div>
+            <div class="destino-info">
+                <h2>Madrid</h2>
+                <p>Sumérgete en la rica historia y cultura de Madrid. Visita museos de renombre, saborea la gastronomía y explora los encantadores barrios.</p>
+                <p>Precio desde: $1500</p>
+                <p>Días de estancia: 6</p>
+                <ul>
+                    <li>Vuelos ida y vuelta incluidos</li>
+                    <li>Alojamiento en hoteles céntricos</li>
+                    <li>Entradas para museos y sitios históricos</li>
+                    <li>Recorrido gastronómico por platos locales</li>
+                    <li>Tiempo libre para explorar y comprar</li>
+                </ul>
+                <a href="" class="btn" @onclick="ShowAddedToCartAlert">Reservar Ahora</a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<style>
+
+    .landing-page {
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        background-color: whitesmoke;
+        color: white;
+        padding: 20px;
+    }
+
+    .hero-section {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+    }
+
+    .hero-content {
+        text-align: center;
+        z-index: 1;
+        color: whitesmoke;
+        font-family: 'Lucida Bright';
+    }
+
+        .hero-content h1 {
+            font-size: 30px;
+            color: whitesmoke;
+            transition: color 0.3s; /* Agrega una transición suave al cambio de color */
+        }
+
+            .hero-content h1:hover {
+                color: #ff9900; /* Cambia el color al pasar el cursor */
+            }
+
+        .hero-content p {
+            font-size: 20px;
+            color: black;
+        }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        filter: brightness(70%);
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+    .image-with-text-container {
+        display: flex;
+        align-items: center;
+        background-color: whitesmoke;
+        padding: 20px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .image-container {
+        flex: 1;
+        padding: 20px;
+    }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    .text-container {
+        flex: 1;
+        padding: 20px;
+        font-family: 'Lucida Bright';
+    }
+
+        .text-container h1 {
+            font-size: 30px;
+            color: #333;
+            transition: color 0.3s; /* Agrega una transición suave al cambio de color */
+        }
+
+            .text-container h1:hover {
+                color: #ff9900; /* Cambia el color al pasar el cursor */
+            }
+    
+    .titulo h1{
+        color: black;
+    }
+
+    .explora {
+        position: relative;
+        z-index: 1; /* Asegurar que el texto esté en el frente */
+        text-align: justify;
+        max-width: 800px;
+    }
+
+        .explora::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+    .explora-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(1px); /* Aplica el efecto de difuminado */
+    }
+
+
+    .destinos-page {
+        font-family: Arial, sans-serif;
+    }
+
+    .destino-container {
+        display: flex;
+        align-items: center;
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .destino-image {
+        flex: 1;
+        max-width: 300px;
+        padding: 20px;
+    }
+
+        .destino-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+    .destino-info {
+        flex: 2;
+        padding: 20px;
+        color: #333;
+    }
+
+        .destino-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ff9900;
+        }
+
+        .destino-info p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+</style>
+
+@code {
+    [Inject]
+    private IJSRuntime JSRuntime { get; set; }
+
+    async Task ShowAddedToCartAlert()
+    {
+        await JSRuntime.InvokeVoidAsync("alert", "Agregado al carrito");
+    }
+}
