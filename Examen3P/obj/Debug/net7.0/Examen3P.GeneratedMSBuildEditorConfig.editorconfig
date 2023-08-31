@@ -9,37 +9,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Examen3P
 build_property.RootNamespace = Examen3P
-build_property.ProjectDir = C:\Users\dinoc\OneDrive\Escritorio\proyecto pic\Examen3P_Grupo5_PICW\Examen3P\
+build_property.ProjectDir = c:\Users\SAMANTHA-DELL\Documents\UNIVERSIDAD\PIC\Unidad3\Examen3P_Grupo5_PICW\Examen3P\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\dinoc\OneDrive\Escritorio\proyecto pic\Examen3P_Grupo5_PICW\Examen3P
+build_property.MSBuildProjectDirectory = c:\Users\SAMANTHA-DELL\Documents\UNIVERSIDAD\PIC\Unidad3\Examen3P_Grupo5_PICW\Examen3P
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/dinoc/OneDrive/Escritorio/proyecto pic/Examen3P_Grupo5_PICW/Examen3P/App.razor]
+[c:/Users/SAMANTHA-DELL/Documents/UNIVERSIDAD/PIC/Unidad3/Examen3P_Grupo5_PICW/Examen3P/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dinoc/OneDrive/Escritorio/proyecto pic/Examen3P_Grupo5_PICW/Examen3P/MainLayout.razor]
+[c:/Users/SAMANTHA-DELL/Documents/UNIVERSIDAD/PIC/Unidad3/Examen3P_Grupo5_PICW/Examen3P/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dinoc/OneDrive/Escritorio/proyecto pic/Examen3P_Grupo5_PICW/Examen3P/Pages/Destinos.razor]
+[c:/Users/SAMANTHA-DELL/Documents/UNIVERSIDAD/PIC/Unidad3/Examen3P_Grupo5_PICW/Examen3P/Pages/Destinos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzdGlub3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dinoc/OneDrive/Escritorio/proyecto pic/Examen3P_Grupo5_PICW/Examen3P/Pages/ImageCollage.razor]
+[c:/Users/SAMANTHA-DELL/Documents/UNIVERSIDAD/PIC/Unidad3/Examen3P_Grupo5_PICW/Examen3P/Pages/ImageCollage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW1hZ2VDb2xsYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dinoc/OneDrive/Escritorio/proyecto pic/Examen3P_Grupo5_PICW/Examen3P/Pages/Index.razor]
+[c:/Users/SAMANTHA-DELL/Documents/UNIVERSIDAD/PIC/Unidad3/Examen3P_Grupo5_PICW/Examen3P/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dinoc/OneDrive/Escritorio/proyecto pic/Examen3P_Grupo5_PICW/Examen3P/Pages/Viajes.razor]
+[c:/Users/SAMANTHA-DELL/Documents/UNIVERSIDAD/PIC/Unidad3/Examen3P_Grupo5_PICW/Examen3P/Pages/Viajes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlhamVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dinoc/OneDrive/Escritorio/proyecto pic/Examen3P_Grupo5_PICW/Examen3P/_Imports.razor]
+[c:/Users/SAMANTHA-DELL/Documents/UNIVERSIDAD/PIC/Unidad3/Examen3P_Grupo5_PICW/Examen3P/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
