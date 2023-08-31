@@ -1,0 +1,78 @@
+@page "/imagecollage"
+
+@layout MainLayout
+<br>
+<div class="title-container">
+    <h1 class="hoverable-title">Paquetes Turísticos con Salidas desde Quito y Guayaquil</h1>
+</div>
+<br>
+<div class="image-collage">
+    <div class="image-item">
+        <img src="images/cancun.jpg" alt="Imagen 1" />
+        <h3>Paquetes a Cancún</h3>
+        <p>Si quieres disfrutar de un tour en Cancún todo incluido con salidas desde Quito o Guayaquil,
+            no dudes en revisar nuestras ofertas y escoger la mejor para ti.</p>
+    </div>
+    <div class="image-item">
+        <img src="images/francia.jpg" alt="Imagen 2" />
+        <h3>Paquetes a Europa</h3>
+        <p>Visita Europa en un tour por el viejo continente, conoce su cultura,
+            historia, gente y su extensa tradición, recorre sus atractivos turísticos en un viaje inolvidable.</p>
+    </div>
+    <div class="image-item">
+        <img src="images/santa.jpg" alt="Imagen 3" />
+        <h3>Paquetes a Tierra Santa</h3>
+        <p>Uno de los sitios turísticos religiosos más importantes es el de Tierra Santa,
+            si estás pensando en visitarlo no dudes en pedir uno de nuestros tours.</p>
+    </div>
+</div>
+
+<style>
+    .title-container {
+        text-align: center;
+        font-family: 'Lucida Bright';
+    }
+
+    .title-container h1 {
+        font-size: 30px;
+        color: #333;
+        transition: color 0.3s; /* Agrega una transición suave al cambio de color */
+    }
+
+    .title-container h1:hover {
+        color: #ff9900; /* Cambia el color al pasar el cursor */
+    }
+
+    .image-item h3 {
+        font-size: 30px;
+        color: #333;
+        transition: color 0.3s; /* Agrega una transición suave al cambio de color */
+    }
+
+    .image-item h3:hover {
+        color: #ff9900; /* Cambia el color al pasar el cursor */
+    }
+
+    .image-collage {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        font-family: 'Lucida Bright';
+    }
+
+    .image-item {
+        flex: 1;
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    .image-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image-item p {
+        margin-top: 10px;
+    }
+</style>

@@ -1,0 +1,139 @@
+﻿@page "/"
+@page "/Pages/ImageCollage.razor"
+@layout MainLayout
+
+<div class="landing-page">
+
+    <div class="hero-container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>SOLCARIBE ~ AGENCIA DE VIAJES </h1>
+                <p>Descubre nuestras ofertas increíbles para tus próximas aventuras.</p>
+                <a href="/viajes" class="btn">Ver Tours</a>
+            </div>
+        </section>
+        <div class="hero-image">
+            <img src="images/mario.jpg" alt="Imagen de fondo" />
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <ImageCollage />
+
+    <div class="image-with-text-container">
+        <div class="content">
+            <div class="image-container">
+                <img src="images/disney.webp" alt="Imagen" />
+            </div>
+            <div class="text-container">
+                <h1>Planifique su viaje</h1>
+                <p>La excelencia de nuestros servicios en Español, Inglés y Francés hace la diferencia,
+                    realizando que su viaje de vacaciones o de negocios sea una experiencia inolvidable.</p>
+                <ul>
+                    <i class="fas fa-check-circle"></i> Contamos con Licencias Anuales de Funcionamiento Turístico.<br>
+                    <i class="fas fa-check-circle"></i> Viajes dentro y Fuera del país.<br>
+                    <i class="fas fa-check-circle"></i> Tickets Aéreos, Nacionales e Internacionales, distribuidos en 4
+                    regiones naturales, destinos muy llamativos.
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<style>
+    .landing-page {
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        background-color: whitesmoke;
+        color: white;
+        padding: 20px;
+    }
+
+    .hero-section {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+    }
+
+    .hero-content {
+        text-align: center;
+        z-index: 1;
+        color: whitesmoke;
+        font-family: 'Lucida Bright';
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+        color: whitesmoke;
+        transition: color 0.3s; /* Agrega una transición suave al cambio de color */
+    }
+
+    .hero-content h1:hover {
+        color: #ff9900; /* Cambia el color al pasar el cursor */
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+    .image-with-text-container {
+        display: flex;
+        align-items: center;
+        background-color: whitesmoke;
+        padding: 20px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .image-container {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text-container {
+        flex: 1;
+        padding: 20px;
+        font-family: 'Lucida Bright';
+    }
+
+    .text-container h1 {
+        font-size: 30px;
+        color: #333;
+        transition: color 0.3s; /* Agrega una transición suave al cambio de color */
+    }
+
+    .text-container h1:hover {
+        color: #ff9900; /* Cambia el color al pasar el cursor */
+    }
+</style>
