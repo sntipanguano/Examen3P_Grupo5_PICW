@@ -1,39 +1,51 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\SAMANTHA-DELL\\Documents\\UNIVERSIDAD\\PIC\\Unidad3\\Examen3P\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\SAMANTHA-DELL\\Documents\\UNIVERSIDAD\\PIC\\Unidad3\\Examen3P\\obj\\Debug\\net7.0\\build-gz\\zRGJLmSN.gz",
+      "Id": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\obj\\Debug\\net7.0\\build-gz\\u+gWlGnO.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\SAMANTHA-DELL\\Documents\\UNIVERSIDAD\\PIC\\Unidad3\\Examen3P\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\SAMANTHA-DELL\\Documents\\UNIVERSIDAD\\PIC\\Unidad3\\Examen3P\\wwwroot\\images\\caribe.png",
+      "Id": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\wwwroot\\images\\cancun.jpg",
+      "PackagePath": "staticwebassets\\images\\cancun.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\wwwroot\\images\\caribe.png",
       "PackagePath": "staticwebassets\\images\\caribe.png"
     },
     {
-      "Id": "C:\\Users\\SAMANTHA-DELL\\Documents\\UNIVERSIDAD\\PIC\\Unidad3\\Examen3P\\wwwroot\\images\\mario.jpg",
+      "Id": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\wwwroot\\images\\disney.webp",
+      "PackagePath": "staticwebassets\\images\\disney.webp"
+    },
+    {
+      "Id": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\wwwroot\\images\\francia.jpg",
+      "PackagePath": "staticwebassets\\images\\francia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\wwwroot\\images\\mario.jpg",
       "PackagePath": "staticwebassets\\images\\mario.jpg"
     },
     {
-      "Id": "C:\\Users\\SAMANTHA-DELL\\Documents\\UNIVERSIDAD\\PIC\\Unidad3\\Examen3P\\wwwroot\\images\\sol.png",
-      "PackagePath": "staticwebassets\\images\\sol.png"
+      "Id": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\wwwroot\\images\\santa.jpg",
+      "PackagePath": "staticwebassets\\images\\santa.jpg"
     },
     {
-      "Id": "C:\\Users\\SAMANTHA-DELL\\Documents\\UNIVERSIDAD\\PIC\\Unidad3\\Examen3P\\wwwroot\\images\\solcaribe.jpg",
-      "PackagePath": "staticwebassets\\images\\solcaribe.jpg"
-    },
-    {
-      "Id": "C:\\Users\\SAMANTHA-DELL\\Documents\\UNIVERSIDAD\\PIC\\Unidad3\\Examen3P\\wwwroot\\images\\suiza.png",
+      "Id": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\wwwroot\\images\\suiza.png",
       "PackagePath": "staticwebassets\\images\\suiza.png"
     },
     {
-      "Id": "C:\\Users\\SAMANTHA-DELL\\Documents\\UNIVERSIDAD\\PIC\\Unidad3\\Examen3P\\wwwroot\\index.html",
+      "Id": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

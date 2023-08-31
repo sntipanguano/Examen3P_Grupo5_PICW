@@ -2,5 +2,216 @@
 
 @layout MainLayout
 
-<h1>Página de Viajes</h1>
-<p>Bienvenido a la página de Viajes.</p>
+
+<div class="video-background">
+    <video autoplay muted loop poster="poster.jpg">
+        <source src="https://github.com/sntipanguano/Examen3P_Grupo5_PICW/blob/main/Examen3P/Pages/assets/back.mp4" type="video/mp4">
+        Tu navegador no admite el elemento de video.
+    </video>
+</div>
+
+<h2 class="title">Inicio Hoteles</h2>
+
+@foreach (var destino in destinos)
+{
+    <div class="destino">
+        <h3 class="destino-nombre">@destino.Nombre</h3>
+        <p class="destino-descripcion">@destino.Descripcion</p>
+
+        @foreach (var hotel in destino.Hoteles)
+        {
+            <div class="hotel">
+                <div class="hotel-contenido">
+                    <img src="@hotel.Imagen" alt="Imagen del hotel" @onmouseover="() => AgrandarImagen(hotel)" @onmouseleave="() => ReducirImagen(hotel)" class="hotel-imagen @(hotel.ImagenGrande ? "hotel-imagen-grande" : "")" />
+                    <button @onclick="() => SeleccionarHotel(hotel)" style="background-color: @buttonColor" class="hotel-boton">Seleccionar</button>
+                    @if (hotelSeleccionado == hotel.Id)
+                    {
+                        <div class="mensaje-seleccionado">
+                            ¡Has seleccionado el hotel @hotel.Nombre!
+                        </div>
+                    }
+                </div>
+                <h4 class="hotel-nombre">@hotel.Nombre</h4>
+                <p class="hotel-descripcion">@hotel.Descripcion</p>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    List<Destino> destinos = new List<Destino>
+    {
+        new Destino
+    {
+        Id = 1,
+        Nombre = "Brasil",
+        Descripcion = "Brasil es el país más grande de América del Sur y cuenta con una rica diversidad cultural, paisajes impresionantes y playas hermosas. Es conocido por el fútbol, la samba, el carnaval de Río de Janeiro y la selva amazónica.",
+        Hoteles = new List<Hotel>
+        {
+            new Hotel
+            {
+                Id = 1,
+                Nombre = "Copacabana Palace",
+                Descripcion = "(Río de Janeiro): Ubicado frente a la famosa playa de Copacabana, el Copacabana Palace es un lujoso hotel histórico que ha alojado a celebridades y líderes mundiales. Ofrece vistas panorámicas al mar, elegantes habitaciones, una piscina en la azotea y restaurantes de clase mundial.",
+                Imagen = "https://media.architecturaldigest.com/photos/56fef3ca47b030293938fe0c/4:3/w_3608,h_2706,c_limit/most-requested-room-belmond-copacabana-palace-01-small.jpg"
+            },
+            new Hotel
+            {
+                Id = 2,
+                Nombre = "Hotel Unique",
+                Descripcion = "(São Paulo): Con una arquitectura única en forma de barco invertido, el Hotel Unique es un destino de lujo en São Paulo. Cuenta con habitaciones modernas y elegantes, un bar en la azotea con piscina, un restaurante gourmet y una ubicación privilegiada cerca de restaurantes y tiendas de moda.",
+                Imagen = "https://cloudfront-us-east-1.images.arcpublishing.com/bloomberglinea/WJ6YVWMR75EJNDXIWCUWNYO3JE.png"
+            }
+        }
+    },
+    new Destino
+    {
+        Id = 2,
+        Nombre = "Roma",
+        Descripcion = "Roma, la capital de Italia, es una ciudad con una rica historia que abarca más de 2.500 años. Es famosa por su impresionante patrimonio arquitectónico, sus ruinas antiguas y su exquisita gastronomía. Alberga emblemáticos monumentos como el Coliseo, el Vaticano y la Fontana di Trevi.",
+        Hoteles = new List<Hotel>
+        {
+            new Hotel
+            {
+                Id = 3,
+                Nombre = "Hotel Hassler Roma",
+                Descripcion = "SSituado en la cima de la Escalinata de la Plaza de España, el Hotel Hassler Roma es un lujoso hotel boutique con vistas panorámicas de la ciudad. Ofrece elegantes habitaciones, un restaurante con estrellas Michelin, un spa y una ubicación ideal para explorar las atracciones cercanas.",
+                Imagen = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/7b/85/76/hassler-penthouse-terrace.jpg?w=700&h=-1&s=1"
+            },
+            new Hotel
+            {
+                Id = 4,
+                Nombre = "Hotel Eden",
+                Descripcion = "Ubicado cerca de la Via Veneto y los Jardines de Borghese, el Hotel Eden es un hotel de lujo con una larga historia. Sus habitaciones y suites son elegantes y refinadas, y el hotel cuenta con un restaurante en la azotea que ofrece vistas espectaculares de la ciudad, así como un spa de primer nivel.",
+                Imagen = "https://i.ytimg.com/vi/q9X5uzm0yPQ/maxresdefault.jpg"
+            }
+        }
+    }
+    };
+
+    string buttonColor = "#60c38b";
+    int hotelSeleccionado = -1;
+
+    void SeleccionarHotel(Hotel hotel)
+    {
+        Console.WriteLine("Hotel seleccionado: " + hotel.Nombre);
+        hotelSeleccionado = hotel.Id;
+        buttonColor = "#5dc1b9";
+    }
+
+    void AgrandarImagen(Hotel hotel)
+    {
+        hotel.ImagenGrande = true;
+    }
+
+    void ReducirImagen(Hotel hotel)
+    {
+        hotel.ImagenGrande = false;
+    }
+
+    class Destino
+    {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+        public List<Hotel> Hoteles { get; set; } = new List<Hotel>();
+    }
+
+    class Hotel
+    {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+        public string Imagen { get; set; }
+        public bool ImagenGrande { get; set; }
+    }
+}
+
+<style>
+    .title {
+        color: #5dc1b9;
+        font-size: 24px;
+        margin-bottom: 10px;
+        margin-left: 10px; /* Agregamos margen izquierdo al título */
+    }
+
+    .destino {
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    .destino-nombre {
+        color: #60c38b;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .destino-descripcion {
+        margin-bottom: 10px;
+    }
+
+    .hotel {
+        margin-bottom: 15px;
+    }
+
+    .hotel-contenido {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hotel-nombre {
+        color: #60c38b;
+        font-size: 16px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+
+    .hotel-descripcion {
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+
+    .hotel-imagen {
+        cursor: pointer;
+        width: 400px; /* Tamaño fijo para las imágenes */
+        height: 200px; /* Tamaño fijo para las imágenes */
+        object-fit: cover; /* Ajustar imagen dentro del tamaño fijo */
+    }
+
+    .hotel-imagen-grande {
+        width: 450px; /* Tamaño fijo para las imágenes grandes */
+        height: 250px; /* Tamaño fijo para las imágenes grandes */
+    }
+
+    .hotel-boton {
+        color: white;
+        background-color: #5dc1b9;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .mensaje-seleccionado {
+        color: #5dc1b9;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background video {
+    object-fit: cover;
+}
+
+
+</style>

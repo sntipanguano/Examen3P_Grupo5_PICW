@@ -1801,26 +1801,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SAMANTHA-DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\dinoc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SAMANTHA-DELL\\Documents\\UNIVERSIDAD\\PIC\\Unidad3\\Examen3P\\Examen3P.csproj",
+      "projectUniqueName": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\Examen3P.csproj",
       "projectName": "Examen3P",
-      "projectPath": "C:\\Users\\SAMANTHA-DELL\\Documents\\UNIVERSIDAD\\PIC\\Unidad3\\Examen3P\\Examen3P.csproj",
-      "packagesPath": "C:\\Users\\SAMANTHA-DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SAMANTHA-DELL\\Documents\\UNIVERSIDAD\\PIC\\Unidad3\\Examen3P\\obj\\",
+      "projectPath": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\Examen3P.csproj",
+      "packagesPath": "C:\\Users\\dinoc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dinoc\\OneDrive\\Escritorio\\proyecto pic\\Examen3P_Grupo5_PICW\\Examen3P\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SAMANTHA-DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\dinoc\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1863,7 +1861,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[7.0.7, 7.0.7]"
+            "version": "[7.0.10, 7.0.10]"
           }
         ],
         "frameworkReferences": {
@@ -1871,7 +1869,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
